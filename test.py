@@ -1,5 +1,6 @@
 #Question 1
 import time
+from itertools import combinations
 
 def func(a,b):
     time.sleep(5)
@@ -13,6 +14,7 @@ def timeit(myfunc,a,b):
     
 print(timeit(func, 1,2))
 
+#Question 2
 def subarray(tab: list, k: int):
     comb = list(combinations(tab, k))
     count = 1
