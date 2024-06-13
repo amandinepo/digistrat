@@ -12,3 +12,14 @@ def timeit(myfunc,a,b):
     return (ans, end - start)
     
 print(timeit(func, 1,2))
+
+def subarray(tab: list, k: int):
+    comb = list(combinations(tab, k))
+    count = 1
+    # on élimine 
+    for i in range(1,len(tab)):
+        count = count + 1 if (tab[i] != tab[i-1]) else count
+    return 
+
+l = [2,2,1,1,3]
+print(subarray(l, 3))
